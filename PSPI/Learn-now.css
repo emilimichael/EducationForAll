@@ -1,0 +1,371 @@
+/* reset all */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+b {
+  color: #011640;
+}
+/* Body styling */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7em;
+  background-color: #2b5f74;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+/*---------------- utilities------------- */
+/* Links styling */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Color of some text-will use later */
+
+.primary-color {
+  color: coral;
+}
+.secondary-color {
+  color: #aa783f;
+}
+.third-color {
+  color: aqua;
+}
+
+/* ------------------HEADER------------------------------- */
+/* inserting background header img */
+.header-img {
+  width: 100%;
+  object-fit: cover;
+  height: 93vh;
+  background-image: radial-gradient(
+      circle,
+      rgba(123, 122, 145, 0.6166841736694677) 0%,
+      rgba(0, 0, 66, 0.5270483193277311) 32%,
+      rgba(1, 0, 51, 0.7679446778711485) 100%
+    ),
+    url("images/learn1.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-content {
+  position: absolute;
+  top: 36%;
+  text-align: center;
+  width: 100%;
+}
+
+/* header text */
+.header-img .img-content h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 6.25em;
+  font-family: "poppins", sans-serif;
+  line-height: 1.35;
+}
+/* paragraph below header */
+.header-img .img-content p {
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.25;
+}
+/*------------------- END OF HEADER-------------- */
+/* ------------------------------------------- */
+/*------------------BUTTONS------------------- */
+.buttons-container {
+  text-align: center;
+  margin-top: 15px;
+}
+.header-img .img-content a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 34px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+  background: #fff;
+  color: #464646;
+  border: #fff solid 1px;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.header-img .img-content a:hover {
+  background: #5a5a5a;
+  color: #fff;
+}
+
+.header-img .img-content a:focus {
+  outline: none !important;
+}
+/* --------------------------------------------------------- */
+/*------------------------ END OF BUTTONS----------------- */
+
+/* About toplist */
+.toplist-wrapper {
+  background-color: #fff;
+}
+
+.text-container {
+  display: inline-block;
+  text-align: center;
+  margin: 50px;
+}
+/* about toplist-main text */
+
+.main-text h2 {
+  font-size: 65px;
+  line-height: 1.67;
+  margin-bottom: 0.5em;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+}
+
+.text-container .main-text p {
+  text-align: center;
+  color: #606362;
+  width: 40%;
+  margin: auto;
+  line-height: 1.875em;
+  font-size: 22px;
+  font-weight: 300;
+  font-family: "comic-sans", serif;
+}
+/* ---------------------------------------------------------- */
+/* -----------------------AGES HEADER---------------------- */
+
+.ages-header {
+  text-align: center;
+  font-family: cursive;
+  font-size: 80px;
+  line-height: 1.6em;
+  margin-bottom: 80px;
+  color: #fff;
+}
+/* LINES BETWEEN HEADER */
+.wrapper {
+  padding-bottom: 30px;
+}
+
+.divider {
+  position: relative;
+  margin-top: 50px;
+  height: 1px;
+}
+
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgb(48, 49, 51),
+    transparent
+  );
+}
+
+/* ------------------------------------------ */
+/* CARD-AREA */
+
+.cards-area-container {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+.cards-area {
+  padding: 100px 0px;
+}
+.cards-area:last-child {
+  padding-bottom: 30px;
+}
+.card:last-child {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.card {
+  background: #eeeeee;
+  border-radius: 10px;
+  -webkit-box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.26);
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  -webkit-box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.47);
+  box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.47);
+}
+
+.card .card-body {
+  max-width: 100%;
+}
+.card .card-body .top-numbers {
+  display: inline-block;
+  padding: 3px;
+  margin: 10px;
+  margin-left: 20px;
+  min-width: 2rem;
+  text-align: center;
+  color: #f4f4f4;
+  line-height: 2rem;
+  background-color: #204959;
+}
+
+.card .card-header img {
+  max-height: 700px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .card-link {
+  color: #316174;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  display: inline-block;
+  width: fit-content;
+  margin-top: 5px;
+}
+.card .card-link:hover {
+  color: #204959;
+}
+.card .card-body p {
+  padding: 10px 20px;
+  max-width: 100%;
+  line-height: 1.7;
+  font-size: 20px;
+  text-align: left;
+  font-family: "poppins", sans-serif;
+}
+
+.source-font {
+  display: inline-block;
+  padding-top: 30px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.card .card-footer {
+  padding: 15px;
+}
+
+.card .card-footer a {
+  font-size: 20px;
+  color: #316174;
+  letter-spacing: 3px;
+  font-family: cursive;
+}
+
+.card .card-footer a:hover {
+  color: #204959;
+}
+
+/* MEDIA Q */
+@media screen and (max-width: 360px) {
+  body {
+    overflow-x: hidden;
+  }
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 30px auto 0;
+  }
+  .header-img {
+    height: 800px;
+  }
+
+  .text-container .main-text h2 {
+    font-size: 60px !important;
+    top: 20px;
+  }
+  .text-container .main-text p {
+    width: 100% !important;
+    text-align: left;
+  }
+  .cards-area-container {
+    display: block;
+    margin: auto;
+    width: 100% !important;
+    padding: 8px;
+  }
+  .card .ages-header {
+    font-size: 40px !important;
+  }
+  .card .card-link {
+    font-size: 25px !important;
+  }
+}
+
+@media screen and (max-height: 980px) {
+  .img-content p {
+    padding: 0 !important;
+  }
+  .img-content {
+    position: relative;
+    top: 30% !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .img-content h1 {
+    font-size: 60px !important;
+  }
+  .img-content {
+    top: 50% !important;
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  .cards-area-container {
+    width: 60%;
+  }
+  .img-content {
+    top: 30% !important;
+  }
+}
+
+@media screen and (max-width: 901px) {
+  .cards-area-container {
+    width: 70%;
+  }
+  .text-container .main-text p {
+    width: 80%;
+    text-align: justify;
+  }
+  .ages-header {
+    font-size: 60px;
+  }
+  .img-content {
+    top: 10% !important;
+  }
+}
+@media screen and (max-width: 901px) {
+  img-content {
+    top: 20px;
+  }
+}
